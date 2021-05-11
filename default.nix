@@ -18,14 +18,14 @@ let
   inherit (stdenv) lib;
   inherit (gnome3) zenity;
   name = "dungeondraft";
-  version = "1.0.0.0";
+  version = "1.0.1.1";
   path = lib.makeBinPath [ zenity gdb ];
 
 in
-stdenv.mkDerivation {
+stdenv.mkDerivation rec {
   inherit name version;
 
-  src = ./dungeondraft.zip;
+  src = ./dungeondraft-1.0.1.1-beta.zip;
 
   nativeBuildInputs = [
     autoPatchelfHook
