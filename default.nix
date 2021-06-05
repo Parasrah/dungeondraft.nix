@@ -25,7 +25,7 @@ in
 stdenv.mkDerivation rec {
   inherit name version;
 
-  src = ./dungeondraft-1.0.1.1-beta.zip;
+  src = ./dungeondraft-1.0.1.3-hotfix.zip;
 
   nativeBuildInputs = [
     autoPatchelfHook
