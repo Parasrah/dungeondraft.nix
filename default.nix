@@ -11,12 +11,12 @@
 , libXrandr
 , libXcursor
 , libXinerama
-, gnome3
+, gnome
 , gdb
 }:
 let
   inherit (stdenv) lib;
-  inherit (gnome3) zenity;
+  inherit (gnome) zenity;
   name = "dungeondraft";
   version = "1.0.1.1";
   path = lib.makeBinPath [ zenity gdb ];
